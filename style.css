@@ -11,8 +11,8 @@
 
 /* main */
 .box {
-    width: 55px;
-    height: 55px;
+    width: 60px;
+    height: 60px;
     background-color: lightgrey;
     border: 1px solid black;
 }
