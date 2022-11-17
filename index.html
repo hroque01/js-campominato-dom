@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Link font -->
+    <link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
     <!-- Link BS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css
     ">
@@ -18,7 +20,7 @@
     <header class="header_container">
         <!-- using bootstrap class -->
         <div class="block d-flex justify-content-between">
-            <h3>Campo Minato</h3>
+            <h3 class="mc-fontes">Minebomb.js</h3>
             <!-- Section button -->
             <div>
                 <select name="difficulty" id="difficulty">
@@ -26,24 +28,20 @@
                     <option value="medium">Medium</option>
                     <option value="hard">Hard</option>
                 </select>
-                <button class="btn btn-outline-secondary">Play</button>
+                <button id="button-play" class="btn btn-outline-secondary">Play</button>
             </div>
         </div>
     </header>
         
     <!-- main -->
-    <main id="grid">
+    <main id="grid" class=" container_bgcolor">
         <!-- bootstrap container -->
-        <div class="grid_container d-flex flex-wrap align-items-center">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <div id="container_grid" class="col-6 d-flex flex-wrap justify-content-center">
+                <div id="disappeared" class="announcement mc-fontes">Please click the "Play" button to start the game!</div>
+            </div>
         </div>
-    </main>
-
-    <!-- footer -->
-    <footer>
-        <h3> Made with &#10084; by <a href="https://boolean.careers/">Boolean</a></h3>
-    </footer>
-    
-    
+    </main>  
     <script src="main.js"></script>
 </body>
 </html>
