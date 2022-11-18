@@ -28,6 +28,10 @@
     background-color: black;
 }
 
+.btn_padding {
+    padding: 10px;
+}
+
 .announcement {
     height: 600px;
     color: white;
@@ -42,3 +46,4 @@
 .bomb {
     background-color: red;
 }
+
