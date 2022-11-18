@@ -20,16 +20,14 @@
     <header class="header_container">
         <!-- using bootstrap class -->
         <div class="block d-flex justify-content-between">
-            <h3 class="mc-fontes">Minebomb.js</h3>
+            <h3 class="mc-fontes">Minebomb</h3>
             <!-- Section button -->
-            <div>
-                <select name="difficulty" id="difficulty">
-                    <option value="ez">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
-                </select>
-                <button id="button-play" class="btn btn-outline-secondary">Play</button>
-            </div>
+            <button id="button-play" class="btn btn btn-secondary">Play</button>
+            <select name="difficulty" id="difficulty">
+                <option value="ez">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
         </div>
     </header>
         
@@ -44,7 +42,7 @@
     </main>  
 
     <footer>
-        <h1 id="title"></h1>
+        <h1 id="points"></h1>
     </footer>
     <script src="main.js"></script>
 </body>

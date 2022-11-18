@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+.header_container {
+    padding: 15px;
+    background-color: lightgrey;
+}
+
 /* fonts */
 .mc-fontes {
     font-family: 'Minecraft', sans-serif;
@@ -11,6 +16,7 @@
 
 /* main */
 .box {
+    color: lightgrey;
     width: 60px;
     height: 60px;
     background-color: lightgrey;
@@ -30,5 +36,9 @@
 }
 
 .clicked {
+    background-color: blue;
+}
+
+.bomb {
     background-color: red;
 }

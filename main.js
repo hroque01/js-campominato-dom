@@ -35,11 +35,17 @@ btn.addEventListener('click', function() {
 
         divElement.addEventListener('click', function(){
             if (myArrNumRandom.includes(i)) {
+                divElement.classList.add('bomb');
                 alert('Ritenta')
-                location.reload();
+
+                // so let the user see the bomb when he clicked
+                setTimeout(function(){
+                    window.location.reload();
+                }, 500)
+
             } else {
                 let points = document.getElementsByClassName('clicked').length;
-                document.getElementById('title').innerHTML = `Il tuo punteggio: ${points}`;
+                document.getElementById('points').innerHTML = `Il tuo punteggio: ${points}`;
                 divElement.classList.add('clicked');
             }
         });
@@ -58,7 +64,7 @@ function randomInteger(min, max) {
 function genArrNumRandomMinMax (howMany, minNum, maxNum) {
 
     // callback to the function
-    let newNumber = randomInteger(minNum, maxNum);
+    // let newNumber = randomInteger(minNum, maxNum);
 
     // generate an array of howMany elements
     const arrNum = [];
