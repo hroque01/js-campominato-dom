@@ -2,16 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Minecraft', sans-serif;
 }
 
 .header_container {
     padding: 15px;
     background-color: lightgrey;
-}
-
-/* fonts */
-.mc-fontes {
-    font-family: 'Minecraft', sans-serif;
 }
 
 /* main */
